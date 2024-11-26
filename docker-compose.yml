@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: db-kirimase
+    restart: always
+    ports:
+      - 5433:5433
+    environment:
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=kirimase
